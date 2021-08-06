@@ -1,0 +1,14 @@
+.footer {
+    &__content {
+        background: #DFDFDF;
+        padding: 60px 0 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__copyright {
+        background-color: $title;
+        text-align: center;
+        color: #A1A1A1;
+        padding: 42px 0 41px;
+    }
+}

@@ -1,0 +1,15 @@
+.menu {
+    padding-right: 15px;
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        padding-right: 45px;
+        padding-left: 35px;
+    }
+    &__list-link {
+        @extend %title-font;
+        color: rgba(54, 56, 56, 0.9);
+        line-height: 22px;
+    }
+}
