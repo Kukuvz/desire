@@ -6,28 +6,8 @@
         height: 120px;
     }
     &__btn {
-        width: 37px;
-        height: 29px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
+        background: transparent;
+        border: none;
         cursor: pointer;
-        span {
-            &:nth-child(2n) {
-                display: block;
-                background: #000000;
-                height: 3px;
-                width: 37px;
-                border-radius: 50px;
-            }
-            &:nth-child(2n + 1) {
-                display: block;
-                background: #000000;
-                height: 3px;
-                width: 24px;
-                border-radius: 50px;
-            }
-        }
     }
 }
