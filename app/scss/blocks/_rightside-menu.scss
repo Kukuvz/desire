@@ -47,8 +47,7 @@
             max-width: 252px;
             margin: 0 auto;
             background: #6D7278;
-            border: 1px solid #979797;
-            border-bottom: none;
+            height: 1px;
         }
     }
     &__text {
@@ -56,5 +55,6 @@
     }
     &__images {
         max-width: 485px;
+        
     }
 }
