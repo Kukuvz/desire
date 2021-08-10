@@ -1,0 +1,30 @@
+.aside {
+    width: 350px;
+    margin-left: 30px;
+    &__search {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__search-input {
+        padding: 6px 45px 6px 18px;
+        border: 1px solid rgba(#383636, .7);
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        &::placeholder {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 27px;
+            font-weight: 400;
+            color: #A1A1A1;
+        }
+    }
+    &__search-btn {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        cursor: pointer;
+    }
+}

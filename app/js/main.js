@@ -1,4 +1,6 @@
 $(function () {
+
+    //right menu
     $('.header__btn').on('click', function() {
         $('.rightside-menu').removeClass('rightside-menu--close');
     });
@@ -6,6 +8,7 @@ $(function () {
         $('.rightside-menu').addClass('rightside-menu--close');
     });
 
+    //slider on main page
     $('.top__slider').slick({
         dots: true,
         arrows: false,
@@ -13,9 +16,31 @@ $(function () {
         autoplay: true,
     });
 
-    const mixer = mixitup('.gallery__inner' , {
-        load: {
-            filter: '.living'
-        }
+    //slider on contact page
+    $('.contact-slider').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 10,
+        slidesToScroll: 10,
     });
+
+    //gallery switching mixitup
+    const containerEl = document.querySelector('.gallery__inner');
+
+    if (containerEl) {
+        const mixer = mixitup(containerEl, {
+            load: {
+                filter: '.living'
+            }
+        });
+    }
+
+    //ratings in inspiration block on about page
+    const counters = document.querySelectorAll('.inspiration__num'),
+      lines = document.querySelectorAll('.inspiration__line span');
+
+    counters.forEach((item, i) => {
+        lines[i].style.width = item.innerHTML;
+    });
+
 })
