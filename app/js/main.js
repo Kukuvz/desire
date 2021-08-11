@@ -49,4 +49,9 @@ $(function () {
         lines[i].style.width = item.innerHTML;
     });
 
+    //adaptation menu
+    $('.header__btn-menu').on('click', function() {
+        $('.menu').toggleClass('menu--open');
+    });
+
 })
