@@ -5,10 +5,34 @@
         align-items: center;
         height: 120px;
     }
+    // &__btn {
+    //     background: transparent;
+    //     border: none;
+    //     cursor: pointer;
+    // }
     &__btn {
-        background: transparent;
-        border: none;
+        height: 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
         cursor: pointer;
+        span {
+            &:nth-child(2n) {
+                display: block;
+                background: #000000;
+                height: 3px;
+                width: 37px;
+                border-radius: 50px;
+            }
+            &:nth-child(2n + 1) {
+                display: block;
+                background: #000000;
+                height: 3px;
+                width: 24px;
+                border-radius: 50px;
+            }
+        }
     }
     &__btn-menu {
         display: none;

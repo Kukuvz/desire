@@ -1,11 +1,21 @@
 $(function () {
 
-    //right menu
-    $('.header__btn').on('click', function() {
-        $('.rightside-menu').removeClass('rightside-menu--close');
+    //right menu on main page
+    const hamburger = document.querySelector('.header__btn'),
+          menu = document.querySelector('.rightside-menu'),
+          closeElem = document.querySelector('.rightside-menu__close'),
+          overlayClose = document.querySelector('.rightside-menu__overlay');
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.add('active');
     });
-    $('.rightside-menu__close').on('click', function() {
-        $('.rightside-menu').addClass('rightside-menu--close');
+
+    closeElem.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+
+    overlayClose.addEventListener('click', () => {
+        menu.classList.remove('active');
     });
 
     //slider on main page
