@@ -1,5 +1,10 @@
 .contact-slider {
     padding-bottom: 102px;
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__link {
         position: relative;
         margin-bottom: 20px;
@@ -21,7 +26,7 @@
         top: 0;
         bottom: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: rgba(#fff, .6);
         color: $title;
